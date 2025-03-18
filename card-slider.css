@@ -1,0 +1,130 @@
+.cover {
+  position: relative;
+  padding: 0px 30px;
+  margin-top: 30pxpx;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-images {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Set the max width to 1000px */
+  margin: 0 auto; /* Center the slider */
+  padding: 40px 0px;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 10px; /* Set a fixed distance for the left button */
+}
+
+.right {
+  right: 10px; /* Ensure the right button is at the same distance as the left */
+}
+
+
+.child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 250px;
+  height: 200px;
+  padding: 0px 15px;
+  margin: 1px 10px;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);
+}
+
+.child img,
+.child > svg {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.scroll-images::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: rgb(140, 182, 96);
+}
+
+.scroll-images::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(140, 182, 96);
+}
+
+button:active {
+  border: none;
+}
+
+/* CSS */
+.button-33 {
+  margin-left: 34%;
+  background-color: rgb(140, 182, 96);
+  border-radius: 100px;
+  box-shadow: rgba(140, 182, 96, 0.2) 0 -25px 18px -14px inset,
+    rgba(140, 182, 96, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(140, 182, 96, 0.15) 0 8px 16px,
+    rgba(140, 182, 96, 0.15) 0 16px 32px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 12px 27px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(140, 182, 96, 0.35) 0 -25px 18px -14px inset,
+    rgba(140, 182, 96) 0 1px 2px, rgba(140, 182, 96, 0.25) 0 2px 4px,
+    rgba(140, 182, 96, 0.25) 0 4px 8px, rgba(140, 182, 96, 0.25) 0 8px 16px,
+    rgba(140, 182, 96, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}

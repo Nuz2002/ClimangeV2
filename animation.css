@@ -1,0 +1,39 @@
+/* Define the glowing animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 144, 42, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 144, 42, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 144, 42, 0.7);
+  }
+}
+
+/* Class to apply the glow effect */
+.glow-effect {
+  animation: glow 1.5s ease-in-out infinite;
+  border: 2px solid rgba(255, 144, 42, 1); /* Optional: to enhance the border visibility */
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* for the our products, our location, about us */
+/* Define the glowing animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 144, 42, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 144, 42, 1);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 144, 42, 0.7);
+  }
+}
+
+/* Class to apply the glow effect */
+.glow-effect {
+  animation: glow 1.5s ease-in-out infinite;
+  border: 2px solid rgba(255, 144, 42, 1); /* Optional: to enhance the border visibility */
+}

@@ -1,0 +1,1464 @@
+body {
+  font-family: "Poppins", sans-serif;
+  padding-top: 0px;
+}
+
+.climange-logo {
+  width: 80px;
+  margin-top: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  /* MOBILE */
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-page {
+    background-color: rgb(140, 182, 96);
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 50px;
+  }
+
+  /* Sidebar */
+  /* Initial style for the navbar and the hamburger */
+  .navbar {
+    position: relative;
+    margin-right: 50px;
+  }
+
+  /* Style the hamburger */
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: -15px;
+    color: white;
+  }
+
+  /* Hide nav-links by default */
+  .nav-links {
+    color: #ff902a;
+    height: 100%;
+    width: 250px; /* Sidebar width */
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hide sidebar initially */
+    background-color: rgb(255, 255, 255); /* Dark background */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    transition: 0.3s; /* Smooth transition effect */
+    padding-top: 60px; /* Padding to push content down */
+    z-index: 1000;
+  }
+
+  /* Links inside the sidebar */
+  .nav-link {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(140, 182, 96) !important;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /* Hover effect for links */
+  .nav-link:hover {
+    background-color: orange;
+  }
+
+  /* Show the sidebar when clicked */
+  .nav-links.show {
+    left: 0; /* Moves the sidebar into view */
+  }
+
+  /* Responsive style for small screens */
+  @media (max-width: 768px) {
+    .hamburger {
+      left: 15px;
+      display: block;
+    }
+  }
+
+  .header-right p.nav-link:hover {
+    font-size: 18px;
+    color: #ff902a;
+    transform: scale(1.05);
+  }
+
+  /* Contribute and other elements */
+  .home-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+
+  /* Names might look awkard since the original styles were created for laptops */
+  .home-left-div {
+    padding-top: 80px;
+    color: white;
+    margin-top: -30px;
+    width: 85%;
+  }
+
+  .contribute-txt {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  .contrib-sub-txt {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .bag-on-desk {
+    width: 300px;
+  }
+
+  .pop-now-txt {
+    color: white;
+    font-size: 27px;
+    font-weight: 500;
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+
+  .pop-now-txt {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 2px;
+  }
+
+  .popular-bags-div {
+    background-color: rgb(140, 182, 96);
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bag-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    object-fit: cover;
+    background-color: white;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 20px 10px rgba(140, 182, 96, 0.9),
+      0 0 40px 20px rgba(82, 167, 82, 0.7), 0 0 60px 30px rgba(93, 150, 33, 0.5);
+  }
+
+  .pop-img-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .pop-order-btn {
+    background-color: white;
+    border-color: rgb(140, 182, 96);
+    border-style: solid;
+    border-width: 2.4px;
+    color: rgb(140, 182, 96);
+    margin-left: 25px;
+    height: 25px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .cart-logo {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  /* Delivery service styles */
+  .delivery-service-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 120px;
+  }
+
+  .delivery-title-txt {
+    color: rgb(255, 192, 75); /*find the actual rgb from figma */
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .delivery-details-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 40px;
+    gap: 25px;
+  }
+
+  .del-detail {
+    width: 180px;
+  }
+
+  .delivery-img-1 {
+    width: 120px;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-us-div {
+    background-color: rgb(140, 182, 96);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .about-us-txt-container {
+    padding-top: 40px;
+    font-size: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .bag-in-hand-img {
+    display: none;
+  }
+
+  .get-ur-bag-btn {
+    background-color: white;
+    border: none;
+    color: rgb(255, 192, 75);
+    font-size: 14px;
+    font-weight: 550;
+    margin-bottom: 50px;
+    margin-top: 24px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  /* OUR PRODUCTS */
+  .button-33 {
+    margin-left: 35%;
+    background-color: rgb(140, 182, 96);
+    border-radius: 100px;
+    box-shadow: rgba(140, 182, 96, 0.2) 0 -25px 18px -14px inset,
+      rgba(140, 182, 96, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+      rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(140, 182, 96, 0.15) 0 8px 16px,
+      rgba(140, 182, 96, 0.15) 0 16px 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+      sans-serif;
+    padding: 12px 27px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .our-prod-txt {
+    margin-left: 35%;
+    margin-top: 20px;
+  }
+
+  .cotton-bag-img {
+    display: none;
+  }
+
+  /* Our location styles */
+  .our-location-div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    background-color: rgb(140, 182, 96);
+  }
+
+  .our-location-txt-container {
+    font-size: 14px;
+
+    color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .location-img {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+  }
+
+  /* Order now styles */
+  .order-now-div {
+    background-color: rgb(140, 182, 96);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .m-order-now-txt {
+    margin-left: -230px;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+
+  .email-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 14px;
+  }
+
+  .email-logo {
+    width: 50px;
+    margin-right: 60px;
+  }
+
+  .whatsapp-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .whatsapp-logo {
+    width: 50px;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Styles for laptops */
+  .first-page {
+    background-color: rgb(140, 182, 96);
+    height: 800px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-top: 50px;
+  }
+
+  .header-left {
+    flex-grow: 1; /* This will take 1 part of the space */
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    margin-right: 20px;
+    flex-grow: 2; /* This will take 2 parts of the space */
+  }
+
+  /* Style for the navigation items */
+  .header-right p.nav-link {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .header-right p.nav-link:hover {
+    font-size: 18px;
+    color: #ff902a;
+    transform: scale(1.05);
+  }
+
+  .home-main-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+  }
+
+  .home-left-div {
+    padding-top: 80px;
+    color: white;
+    margin-top: 60px;
+    width: 55%;
+  }
+
+  .bag-on-desk {
+    width: 400px;
+  }
+
+  .contribute-txt {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: white;
+  }
+
+  .contrib-sub-txt {
+    margin-top: 5px;
+  }
+
+  .bag-on-desk {
+    width: 350px;
+    margin-left: 90px;
+    margin-top: 110px;
+    border-radius: 40px;
+    margin-right: 20px;
+  }
+
+  .order-now-btn {
+    height: 40px;
+    border: none;
+    color: rgb(140, 182, 96);
+    width: 134px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .order-now-btn:hover {
+    height: 45px;
+    width: 140px;
+    border-radius: 23px;
+  }
+
+  .pop-now-txt {
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .pop-now-txt {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 4px;
+  }
+
+  .popular-bags-div {
+    background-color: rgb(140, 182, 96);
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    border-radius: 40px;
+    padding-left: 20px;
+  }
+
+  .top-three-bags {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+
+  .bag-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    object-fit: cover;
+    background-color: white;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 20px 10px rgba(140, 182, 96, 0.9),
+      0 0 40px 20px rgba(82, 167, 82, 0.7), 0 0 60px 30px rgba(93, 150, 33, 0.5);
+  }
+
+  .pop-img-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .pop-order-btn {
+    background-color: white;
+    border-color: rgb(140, 182, 96);
+    border-style: solid;
+    border-width: 2.4px;
+    color: rgb(140, 182, 96);
+    margin-left: 25px;
+    height: 25px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .cart-logo {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  /* Delivery service styles */
+  .delivery-service-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 120px;
+  }
+
+  .delivery-title-txt {
+    color: orange; /*find the actual rgb from figma */
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .delivery-details-div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .del-detail {
+    width: 160px;
+  }
+
+  .delivery-img-1 {
+    width: 120px;
+    height: 100%;
+  }
+
+  .about-us-div {
+    background-color: rgb(140, 182, 96);
+    color: white;
+    display: flex;
+    margin-top: 120px;
+    height: auto;
+    position: relative;
+  }
+
+  .about-us-txt-container {
+    width: 45%;
+    padding-top: 60px;
+    padding-left: 80px;
+    font-size: 14px;
+  }
+
+  .about-us-img {
+    position: absolute;
+    top: -13%;
+    left: 58%;
+  }
+  .bag-in-hand-img {
+    height: 440px;
+    width: 90%;
+    border-radius: 25px;
+  }
+
+  .get-ur-bag-btn {
+    background-color: white;
+    border: none;
+    color: orange;
+    font-size: 22px;
+    font-weight: 550;
+    margin-bottom: 50px;
+    margin-top: 24px;
+    padding: 15px 40px 15px 40px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  /* Our location styles */
+  .our-location-div {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    height: 375px;
+  }
+
+  .our-location-txt-container {
+    font-size: 14px;
+    background-color: rgb(140, 182, 96);
+    color: white;
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 180px;
+    width: 70%;
+    border-radius: 0 24px 24px 0;
+  }
+
+  .location-img {
+    height: 300px;
+    position: absolute;
+    left: 55%;
+    top: 10%;
+  }
+
+  /* Order now styles */
+  .order-now-div {
+    background-color: rgb(140, 182, 96);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: white;
+    padding-top: 60px;
+    padding-left: 80px;
+  }
+
+  .contact-methods-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+
+  .email-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 14px;
+  }
+
+  .email-logo {
+    width: 50px;
+    margin-right: 40px;
+  }
+
+  .whatsapp-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .whatsapp-logo {
+    width: 50px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .first-page {
+    background-color: rgb(140, 182, 96);
+    height: 800px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-top: 50px;
+    height: 40px;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    margin-right: 80px;
+  }
+  /* Navbar */
+  .nav-links {
+    display: flex;
+    width: max-content;
+    font-size: 30px;
+  }
+  /* Style for the navigation items */
+  .header-right p.nav-link {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .header-right p.nav-link:hover {
+    font-size: 18px;
+    color: #ff902a;
+    transform: scale(1.05);
+  }
+
+  .home-main-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .home-left-div {
+    padding-top: 80px;
+    color: white;
+    margin-top: 60px;
+    width: 55%;
+  }
+
+  .contribute-txt {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: white;
+  }
+
+  .contrib-sub-txt {
+    margin-top: 5px;
+  }
+
+  .bag-on-desk {
+    width: 350px;
+    margin-left: 90px;
+    margin-top: 110px;
+    border-radius: 40px;
+    margin-right: 20px;
+  }
+
+  .order-now-btn-fp {
+    background: white;
+    height: 60px;
+    border: none;
+    color: rgb(140, 182, 96);
+    width: 194px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    transform: scale(1); /* Initial scale (normal size) */
+  }
+
+  /* Hover effect */
+  .order-now-btn-fp:hover {
+    transform: scale(1.1); /* Enlarges the button slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add subtle shadow on hover */
+  }
+
+  .order-now-btn:hover {
+    height: 45px;
+    width: 140px;
+    border-radius: 23px;
+  }
+
+  .pop-now-txt {
+    color: white;
+    font-size: 43px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .pop-now-txt {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 4px;
+  }
+
+  .popular-bags-div {
+    background-color: rgb(140, 182, 96);
+    height: auto;
+    border-radius: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .top-three-bags {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bag-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    object-fit: cover;
+    background-color: white;
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 20px 10px rgba(140, 182, 96, 0.9),
+      0 0 40px 20px rgba(82, 167, 82, 0.7), 0 0 60px 30px rgba(93, 150, 33, 0.5);
+  }
+
+  .pop-img-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .pop-order-btn {
+    background-color: white;
+    border-color: rgb(140, 182, 96);
+    border-style: solid;
+    border-width: 2.4px;
+    color: rgb(140, 182, 96);
+    margin-left: 25px;
+    height: 35px;
+    width: 80px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding-top: 4px;
+  }
+  .pop-order-btn:hover {
+    transform: scale(1.1); /* Enlarges the button slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add subtle shadow on hover */
+  }
+
+  .cart-logo {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  /* Delivery service styles */
+  .delivery-service-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 350px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 120px;
+  }
+
+  .delivery-title-txt {
+    color: orange; /*find the actual rgb from figma */
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .delivery-details-div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .del-detail {
+    width: 220px;
+  }
+
+  .delivery-img-1 {
+    width: 160px;
+    height: 100%;
+  }
+
+  .about-us-div {
+    background-color: rgb(140, 182, 96);
+    color: white;
+    display: flex;
+    margin-top: 120px;
+    height: auto;
+    position: relative;
+  }
+
+  .about-us-txt-container {
+    width: 45%;
+    padding-top: 60px;
+    padding-left: 80px;
+    font-size: 20px;
+  }
+
+  .about-us-img {
+    position: absolute;
+    top: -13%;
+    left: 58%;
+  }
+  .bag-in-hand-img {
+    height: 640px;
+    width: 90%;
+    border-radius: 25px;
+  }
+
+  .get-ur-bag-btn {
+    background-color: white;
+    border: none;
+    color: orange;
+    font-size: 26px;
+    font-weight: 550;
+    margin-bottom: 50px;
+    margin-top: 24px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  /* Corrected hover class */
+  .get-ur-bag-btn:hover {
+    transform: scale(1.1); /* Enlarges the button slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add subtle shadow on hover */
+  }
+
+  .our-prod-txt {
+    margin-left: 50%;
+    margin-top: 50px;
+  }
+
+  /*Our products */
+  /* CSS */
+  .button-33 {
+    margin-left: 50%;
+    background-color: rgb(140, 182, 96);
+    border-radius: 100px;
+    box-shadow: rgba(140, 182, 96, 0.2) 0 -25px 18px -14px inset,
+      rgba(140, 182, 96, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+      rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(140, 182, 96, 0.15) 0 8px 16px,
+      rgba(140, 182, 96, 0.15) 0 16px 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+      sans-serif;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 22px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  /* Our location styles */
+  .our-location-div {
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+    height: 520px;
+  }
+
+  .our-location-txt-container {
+    font-size: 20px;
+    background-color: rgb(140, 182, 96);
+    color: white;
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 180px;
+    width: 70%;
+    border-radius: 0 24px 24px 0;
+    margin-bottom: 80px;
+  }
+
+  .location-img {
+    height: 300px;
+    position: absolute;
+    left: 55%;
+    top: 10%;
+  }
+
+  /* Order now styles */
+  .order-now-div {
+    background-color: rgb(140, 182, 96);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: white;
+    padding-top: 60px;
+    padding-left: 80px;
+    font-size: 20px;
+  }
+
+  .contact-methods-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+
+  .email-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 14px;
+  }
+
+  .email-logo {
+    width: 50px;
+    margin-right: 40px;
+  }
+
+  .whatsapp-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .whatsapp-logo {
+    width: 50px;
+    margin-right: 30px;
+  }
+}
+/* wider screens */
+@media (min-width: 1920px) {
+  .first-page {
+    background-color: rgb(140, 182, 96);
+    height: 800px;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    height: 40px;
+    margin-top: 0px;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    margin-right: 80px;
+  }
+  .header-left {
+    font-size: 26px !important;
+  }
+  /* Navbar */
+  .nav-links {
+    display: flex;
+    width: max-content;
+    font-size: 30px;
+  }
+  /* Style for the navigation items */
+  .header-right p.nav-link {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .header-right p.nav-link:hover {
+    font-size: 28px;
+    color: #ff902a;
+    transform: scale(1.05);
+  }
+
+  .home-main-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .home-left-div {
+    padding-top: 80px;
+    color: white;
+    margin-top: 60px;
+    width: 55%;
+  }
+
+  .contribute-txt {
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: white;
+  }
+
+  .contrib-sub-txt {
+    margin-top: 5px;
+  }
+
+  .bag-on-desk {
+    width: 350px;
+    margin-top: 110px;
+    border-radius: 40px;
+    margin-right: 200px;
+  }
+
+  .order-now-btn-fp {
+    background: white;
+    height: 80px;
+    border: none;
+    color: rgb(140, 182, 96);
+    width: 254px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer;
+    transform: scale(1); /* Initial scale (normal size) */
+  }
+
+  /* Hover effect */
+  .order-now-btn-fp:hover {
+    transform: scale(1.1); /* Enlarges the button slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add subtle shadow on hover */
+  }
+
+  .order-now-btn:hover {
+    height: 45px;
+    width: 140px;
+    border-radius: 23px;
+  }
+
+  .pop-now-txt {
+    color: white;
+    font-size: 43px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  .pop-now-txt {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 4px;
+  }
+
+  .popular-bags-div {
+    background-color: rgb(140, 182, 96);
+    height: auto;
+    border-radius: 40px;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 80px;
+    margin-bottom: 150px;
+  }
+
+  .top-three-bags {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+  }
+
+  .bag-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    object-fit: cover;
+    background-color: white;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 20px 10px rgba(140, 182, 96, 0.9),
+      0 0 40px 20px rgba(82, 167, 82, 0.7), 0 0 60px 30px rgba(93, 150, 33, 0.5);
+  }
+
+  .pop-img-1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .btn-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .pop-order-btn {
+    background-color: white;
+    border-color: rgb(140, 182, 96);
+    border-style: solid;
+    border-width: 2.4px;
+    color: rgb(140, 182, 96);
+    margin-left: 25px;
+    height: 45px;
+    width: 100px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding-top: 4px;
+  }
+  .pop-order-btn:hover {
+    transform: scale(1.1); /* Enlarges the button slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add subtle shadow on hover */
+  }
+
+  .cart-logo {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  /* Delivery service styles */
+  .delivery-service-div {
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 450px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 220px;
+  }
+
+  .delivery-title-txt {
+    color: orange; /*find the actual rgb from figma */
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .delivery-details-div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  .del-detail {
+    width: 220px;
+  }
+
+  .delivery-img-1 {
+    width: 160px;
+    height: 100%;
+  }
+
+  .about-us-div {
+    background-color: rgb(140, 182, 96);
+    color: white;
+    display: flex;
+    margin-top: 120px;
+    height: auto;
+    position: relative;
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+
+  .about-us-txt-container {
+    width: 45%;
+    padding-top: 60px;
+    padding-left: 80px;
+    font-size: 22px;
+  }
+
+  .about-us-img {
+    position: absolute;
+    top: -13%;
+    left: 58%;
+  }
+  .bag-in-hand-img {
+    height: 640px;
+    width: 90%;
+    border-radius: 25px;
+  }
+
+  .get-ur-bag-btn {
+    background-color: white;
+    border: none;
+    color: orange;
+    font-size: 26px;
+    font-weight: 550;
+    margin-bottom: 50px;
+    margin-top: 24px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  /* Corrected hover class */
+  .get-ur-bag-btn:hover {
+    transform: scale(1.1); /* Enlarges the button slightly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add subtle shadow on hover */
+  }
+
+  /*Our products */
+  /* CSS */
+  .special-apackages-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .our-prod-txt {
+    margin-top: 60px;
+    margin-left: 50%;
+  }
+  .button-33 {
+    margin-left: 50%;
+    background-color: rgb(140, 182, 96);
+    border-radius: 100px;
+    box-shadow: rgba(140, 182, 96, 0.2) 0 -25px 18px -14px inset,
+      rgba(140, 182, 96, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+      rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(140, 182, 96, 0.15) 0 8px 16px,
+      rgba(140, 182, 96, 0.15) 0 16px 32px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto,
+      sans-serif;
+    padding: 20px 60px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 22px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  /* Our location styles */
+  .our-location-div {
+    background-color: rgb(140, 182, 96);
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 24px 24px 0;
+    width: 70%;
+    align-items: center;
+    height: 600px;
+  }
+
+  .our-location-txt-container {
+    font-size: 22px;
+    color: white;
+    padding-top: 60px;
+    padding-right: 180px;
+    margin-left: 0px;
+  }
+
+  .location-img {
+    margin-top: 170px;
+    margin-left: -500px;
+    width: 400px;
+    margin-bottom: 50px;
+  }
+
+  /* Order now styles */
+  .order-now-div {
+    background-color: rgb(140, 182, 96);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    color: white;
+    padding-top: 60px;
+    padding-left: 300px;
+    padding-right: 300px;
+    font-size: 22px;
+  }
+
+  .contact-methods-div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
+    margin-top: 40px;
+  }
+
+  .email-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 14px;
+  }
+
+  .email-logo {
+    width: 50px;
+    margin-right: 40px;
+  }
+
+  .whatsapp-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .whatsapp-logo {
+    width: 50px;
+    margin-right: 30px;
+  }
+}
+
+/* THE COTTON BAG DETAILS */
+.product-details {
+  background-color: rgb(140, 182, 96);
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 100px;
+  padding-top: 50px;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.icon {
+  font-size: 24px !important;
+}
+
+.cotton-bag-img {
+  width: 20%;
+  margin-bottom: 40px;
+  margin-left: 500px;
+}
